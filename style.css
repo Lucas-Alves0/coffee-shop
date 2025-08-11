@@ -164,7 +164,7 @@ section {
     line-height: 1.5;
 }
 
-.menu .box-container {
+.box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -175,7 +175,13 @@ section {
     border: var(--border);
     padding: 1rem;
     border-radius: 1.5rem;
+    cursor: pointer;
 }
+
+.menu .box-container .box:hover {
+    background-color: var(--white);
+}
+
 
 .menu .box-container .box img {
     width: 10rem;
@@ -194,4 +200,41 @@ section {
     color: var(--white);
     padding: 0.5rem;
     line-height: 1.5;
+}
+
+.menu .box-container .box .btn:hover {
+    background-color: var(--white);
+    color: var(--main-color);
+    border-color: var(--main-color);
+    border-width: 0.1rem;
+}
+
+.menu .box-container .box:hover>* {
+    color: var(--black);
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    padding: 1rem;
+    border-top: var(--border);
+}
+
+.footer .share img {
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.footer .share img:hover {
+    width: 3rem;
+    height: 3rem;
 }
