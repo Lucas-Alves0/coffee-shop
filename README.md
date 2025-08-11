@@ -1,1 +1,1 @@
-# coffee-shop page
+# coffee-shop site
